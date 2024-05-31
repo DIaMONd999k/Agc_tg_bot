@@ -1,0 +1,6 @@
+.env
+/tests/
+/venv/
+/.idea
+/__pycache__
+test.py

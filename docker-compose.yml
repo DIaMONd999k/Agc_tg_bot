@@ -1,0 +1,11 @@
+version: '0.0.1'
+services:
+  agc_tg_bot:
+    build: .
+    restart: always
+    container_name: agc_tg_bot
+    network_mode: "host"
+    volumes:
+      - /var/log/agc_bot_logs/:/var/log/agc_bot_logs/
+    environment:
+      - TZ=Europe/Moscow
